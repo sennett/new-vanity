@@ -1,3 +1,31 @@
-h1 {
-    color:red;
+html,body{height:100%;}
+
+.wrap {
+    width:100%;
+    height:100%;
+}
+
+name {
+    height:10%;
+}
+
+timeline, blurb, contact {
+    height: 45%;
+}
+
+html {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+name, timeline {
+    border-bottom: solid 1px;
+    display:block;
+}
+
+blurb, contact {
+    display:block;
+}
+
+blurb {
+    border-right: solid 1px;
 }
