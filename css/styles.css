@@ -3,7 +3,6 @@ body {
 }
 
 name, timeline {
-    border-bottom: solid 1px;
     display:block;
 }
 
@@ -14,6 +13,7 @@ blurb, contact {
     letter-spacing: 0.4px;
     word-spacing: 5px;
     text-align: justify;
+    border-top: solid 1px;
 }
 
 blurb {
