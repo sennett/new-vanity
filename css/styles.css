@@ -16,11 +16,11 @@ blurb, contact {
     letter-spacing: 0.4px;
     word-spacing: 5px;
     text-align: justify;
-    border-top: solid 1px #595959;
+    border-top: solid 1px #3C3C3C;
 }
 
 blurb {
-    border-right: solid 1px #595959;
+    border-right: solid 1px #3C3C3C;
 }
 
 blurb p {
