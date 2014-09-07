@@ -11,7 +11,7 @@ timeline li::before {
     left: 0;
     right: 0;
     top:50%;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #595959;
 }
 
 timeline li {
@@ -28,8 +28,8 @@ timeline li {
 timeline span {
     display:block;
     height:3em;
-    border:solid 2px;
-    background-color:black;
+    border:solid 2px #595959;
+    background-color: #595959;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -38,26 +38,6 @@ timeline span {
     white-space: nowrap;
     overflow: hidden;
     padding:10px;
-}
-
-timeline li:nth-child(1) {
-    color: #F20000;
-}
-
-timeline li:nth-child(2) {
-    color: #F27100;
-}
-
-timeline li:nth-child(3) {
-    color: #F2EE00;
-}
-
-timeline li:nth-child(4) {
-    color: #0CB500;
-}
-
-timeline li:nth-child(5) {
-    color: #0033FF;
 }
 
 timeline li:nth-child(1) span {

@@ -1,9 +1,7 @@
 body {
-    background-color: black;
-    color:white;
-}
-
-body {
+    background-color: #262626;
+    /* light: 595959 */
+    color: #cbcbcb;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'ralewaythin', 'Helvetica Neue', "Calibri Light", "Calibri", Helvetica, Arial, sans-serif;
 }
 
@@ -18,11 +16,11 @@ blurb, contact {
     letter-spacing: 0.4px;
     word-spacing: 5px;
     text-align: justify;
-    border-top: solid 1px;
+    border-top: solid 1px #595959;
 }
 
 blurb {
-    border-right: solid 1px;
+    border-right: solid 1px #595959;
 }
 
 blurb p {
