@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'ralewaythin', 'Helvetica Neue', "Calibri Light", "Calibri", Helvetica, Arial, sans-serif;
 }
@@ -10,9 +8,18 @@ name, timeline {
 }
 
 blurb, contact {
-    display:block;
+    padding-top: 15px;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    word-spacing: 5px;
+    text-align: justify;
 }
 
 blurb {
     border-right: solid 1px;
+}
+
+blurb p {
+    padding-bottom:2em;
 }
