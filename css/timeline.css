@@ -18,19 +18,27 @@ timeline li {
     list-style-type:none;
     margin:0;
     padding:0;
-    border-bottom:dashed 1px;
     height:20%;
+    /* because of transform: translateY(-50%); on child */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 timeline span {
     display:block;
     height:3em;
-    border:solid 1px;
+    border:solid 2px;
     background-color:white;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 timeline li:nth-child(1) span {
     margin-left: 4.45%;
     width:18.28%;
