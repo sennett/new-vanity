@@ -28,7 +28,6 @@ timeline li {
 timeline span {
     display:block;
     height:3em;
-    border:solid 2px #595959;
     background-color: #595959;
     position: relative;
     top: 50%;
@@ -37,7 +36,8 @@ timeline span {
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
-    padding:10px;
+    padding:11px;
+    border-radius: 5px;
 }
 
 timeline li:nth-child(1) span {
