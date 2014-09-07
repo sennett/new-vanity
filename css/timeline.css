@@ -29,7 +29,7 @@ timeline span {
     display:block;
     height:3em;
     border:solid 2px;
-    background-color:white;
+    background-color:black;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -37,6 +37,27 @@ timeline span {
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
+    padding:10px;
+}
+
+timeline li:nth-child(1) {
+    color: #F20000;
+}
+
+timeline li:nth-child(2) {
+    color: #F27100;
+}
+
+timeline li:nth-child(3) {
+    color: #F2EE00;
+}
+
+timeline li:nth-child(4) {
+    color: #0CB500;
+}
+
+timeline li:nth-child(5) {
+    color: #0033FF;
 }
 
 timeline li:nth-child(1) span {

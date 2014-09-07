@@ -1,4 +1,9 @@
 body {
+    background-color: black;
+    color:white;
+}
+
+body {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'ralewaythin', 'Helvetica Neue', "Calibri Light", "Calibri", Helvetica, Arial, sans-serif;
 }
 
