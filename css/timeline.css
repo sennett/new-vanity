@@ -7,38 +7,50 @@ timeline li {
     list-style-type:none;
     margin:0;
     padding:0;
-    border-bottom:solid 1px;
+    border-bottom:dashed 1px;
     height:20%;
 }
 
-timeline span {
-    display:block;
-    float:left;
-    height:40%;
-    border:solid 1px;
+timeline .vertical-center {
+    height:100%;
+    width:100%;
+    position:relative;
 }
 
-timeline li:nth-child(1) span {
+timeline .inactive {
+    border-bottom: solid 1px;
+    height:50%;
+    display:block;
+}
+
+timeline .active {
+    display:block;
+    height:3em;
+    border:solid 1px;
+    background-color:white;
+}
+
+timeline li:nth-child(1) .active {
     margin-left: 4.45%;
     width:18.28%;
 }
 
-timeline li:nth-child(2) span {
+timeline li:nth-child(2) .active {
     margin-left: 25%;
     width:25%;
 }
 
-timeline li:nth-child(3) span {
+timeline li:nth-child(3) .active {
     margin-left: 56.81%;
     width:11.37%;
 }
 
-timeline li:nth-child(4) span {
+timeline li:nth-child(4) .active {
     margin-left: 68.18%;
     width:22.73%;
 }
 
-timeline li:nth-child(5) span {
+timeline li:nth-child(5) .active {
     margin-left: 90.91%;
     width:4.54%;
 }
