@@ -11,6 +11,13 @@ timeline li {
     height:20%;
 }
 
+timeline .line {
+    position:relative;
+    left: 0;
+    right: 0;
+    top:50%;
+    border-bottom: solid 1px;
+}
 
 timeline span {
     display:block;
@@ -21,6 +28,8 @@ timeline span {
     top: 50%;
     transform: translateY(-50%);
 }
+
+
 
 timeline li:nth-child(1) span {
     margin-left: 4.45%;
