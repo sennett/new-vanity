@@ -1,0 +1,28 @@
+html,body{height:100%;}
+
+.wrap {
+    width:100%;
+    height:100%;
+}
+
+.wrap > div {
+    height:45%;
+}
+
+.wrap > div > div {
+    height:100%;
+}
+
+name.h1 {
+    height:10%;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+timeline {
+    height: 45%;
+}
+
+blurb, contact {
+    height: 100%;
+}
