@@ -33,7 +33,7 @@ timeline li {
     list-style-type:none;
     margin:0;
     padding:0;
-    height:20%;
+    height:18%;
     /* because of transform: translateY(-50%); on child */
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
