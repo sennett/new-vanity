@@ -46,7 +46,7 @@ timeline li:hover::before {
     border-color: #595959;
 }
 
-timeline li:hover span {
+timeline li:hover activity {
     background-color: #595959;
     /* important required to overwrite Nth child selector.
     will get removed when using js to transition. */
@@ -55,7 +55,7 @@ timeline li:hover span {
     float:none;
 }
 
-timeline span {
+timeline activity {
     display:block;
     height:3em;
     background-color: #3C3C3C;
@@ -68,32 +68,31 @@ timeline span {
     overflow: hidden;
     padding:11px;
     border-radius: 5px;
-    float:left;
     -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
     transition:width 0.7s, margin-left 0.7s;
 }
 
-timeline li:nth-child(1) span {
+timeline li:nth-child(1) activity {
     margin-left: 4.45%;
     width:18.28%;
 }
 
-timeline li:nth-child(2) span {
+timeline li:nth-child(2) activity {
     margin-left: 25%;
     width:25%;
 }
 
-timeline li:nth-child(3) span {
+timeline li:nth-child(3) activity {
     margin-left: 56.81%;
     width:11.37%;
 }
 
-timeline li:nth-child(4) span {
+timeline li:nth-child(4) activity {
     margin-left: 68.18%;
     width:22.73%;
 }
 
-timeline li:nth-child(5) span {
+timeline li:nth-child(5) activity {
     margin-left: 90.91%;
     width:4.54%;
 }
