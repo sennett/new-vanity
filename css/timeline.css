@@ -53,8 +53,6 @@ timeline li:hover span {
     width: 40% !important;
     margin-left:20% !important;
     float:none;
-    -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
-    transition:width 0.7s, margin-left 0.7s;
 }
 
 timeline span {
@@ -71,6 +69,8 @@ timeline span {
     padding:11px;
     border-radius: 5px;
     float:left;
+    -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s;
 }
 
 timeline li:nth-child(1) span {
