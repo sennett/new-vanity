@@ -3,6 +3,21 @@ timeline ol {
     height: 100%;
 }
 
+timeline year {
+    color: #3C3C3C;
+    display:inline-block;
+    width:9.09%;
+    /*stupid inline block*/
+    margin-right:-4px; 
+    border-right:solid 1px;
+    border-top:solid 1px;
+    text-align:center;
+}
+
+timeline year:last-child {
+    border-right:none;
+}
+
 /* centered line */
 timeline li::before {
     content: "";
@@ -46,6 +61,7 @@ timeline span {
     overflow: hidden;
     padding:11px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 timeline li:nth-child(1) span {
