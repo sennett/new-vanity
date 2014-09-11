@@ -4,14 +4,16 @@ timeline ol {
 }
 
 timeline year {
-    color: #3C3C3C;
+    color: #474747;
     display:inline-block;
     width:9.09%;
     /*stupid inline block*/
     margin-right:-4px; 
-    border-right:solid 1px;
-    border-top:solid 1px;
+    border-right:solid 1px #3C3C3C;
+    border-top:solid 1px #3C3C3C;
     text-align:center;
+    font-size:11px;
+    line-height: 1.7em;
 }
 
 timeline year:last-child {
