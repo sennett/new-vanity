@@ -42,22 +42,6 @@ timeline li {
     transform-style: preserve-3d;
 }
 
-timeline li:hover::before {
-    border-color: #595959;
-    -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
-    transition: border-color 0.7s;
-}
-
-timeline li:hover activity {
-    background-color: #595959;
-    /* important required to overwrite Nth child selector.
-    will get removed when using js to transition. */
-    width: 40% !important;
-    margin-left:20% !important;
-    float:none;
-    height:4em;
-}
-
 timeline activity {
     display:block;
     height:3em;
@@ -105,5 +89,21 @@ timeline jobTitle {
 }
 
 timeline date {
-    display: block;
+    display: none;
+}
+
+timeline li:hover::before {
+    border-color: #595959;
+    -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
+    transition: border-color 0.7s;
+}
+
+timeline li:hover activity {
+    background-color: #595959;
+    /* important required to overwrite Nth child selector.
+    will get removed when using js to transition. */
+    width: 40% !important;
+    margin-left:20% !important;
+    float:none;
+    height:4em;
 }
