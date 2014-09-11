@@ -44,6 +44,8 @@ timeline li {
 
 timeline li:hover::before {
     border-color: #595959;
+    -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
+    transition: border-color 0.7s;
 }
 
 timeline li:hover activity {
@@ -53,6 +55,7 @@ timeline li:hover activity {
     width: 40% !important;
     margin-left:20% !important;
     float:none;
+    height:4em;
 }
 
 timeline activity {
@@ -61,15 +64,15 @@ timeline activity {
     background-color: #3C3C3C;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -1.5em;
     text-overflow: ellipsis;
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
     padding:11px;
     border-radius: 5px;
-    -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
-    transition:width 0.7s, margin-left 0.7s;
+    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, height 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s, background-color 0.7s,  height 0.7s;
 }
 
 timeline li:nth-child(1) activity {
@@ -95,4 +98,12 @@ timeline li:nth-child(4) activity {
 timeline li:nth-child(5) activity {
     margin-left: 90.91%;
     width:4.54%;
+}
+
+timeline jobTitle {
+    display: block;
+}
+
+timeline date {
+    display: block;
 }
