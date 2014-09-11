@@ -51,9 +51,10 @@ timeline li:hover span {
     /* important required to overwrite Nth child selector.
     will get removed when using js to transition. */
     width: 40% !important;
-    margin-left:auto !important;
-    margin-right:auto;
+    margin-left:20% !important;
     float:none;
+    -webkit-transition:width 0.7s, margin-left 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s;
 }
 
 timeline span {
