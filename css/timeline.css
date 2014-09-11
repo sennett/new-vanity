@@ -89,7 +89,9 @@ timeline jobTitle {
 }
 
 timeline date {
-    display: none;
+    opacity: 0; /* fade in using opacity */
+    -webkit-transition:opacity 0.7s, -webkit-transform 0.7s;
+    transition:opacity 0.7s;
 }
 
 timeline li:hover::before {
@@ -106,4 +108,11 @@ timeline li:hover activity {
     margin-left:20% !important;
     float:none;
     height:4em;
+}
+
+timeline li:hover date {
+    opacity: 100; /* fade in using opacity */
+    display:block; /* prevents a transition-rendering, 
+    line-wrap style jump when the fully rendered date 
+    string is longer than the container when it is shrunk */
 }
