@@ -55,8 +55,8 @@ timeline activity {
     overflow: hidden;
     padding:11px;
     border-radius: 5px;
-    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, height 0.7s, -webkit-transform 0.7s;
-    transition:width 0.7s, margin-left 0.7s, background-color 0.7s,  height 0.7s;
+    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, max-height 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s, background-color 0.7s,  max-height 0.7s;
 }
 
 timeline li:nth-child(1) activity {
@@ -107,7 +107,8 @@ timeline li:hover activity {
     width: 40% !important;
     margin-left:20% !important;
     float:none;
-    height:4em;
+    height:auto;
+    max-height: 1000px;
 }
 
 timeline li:hover date {
