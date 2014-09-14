@@ -44,19 +44,22 @@ timeline li {
 
 timeline activity {
     display:block;
-    height:3em;
     background-color: #3C3C3C;
     position: relative;
     top: 50%;
     margin-top: -1.5em;
-    text-overflow: ellipsis;
-    /* Required for text-overflow to do anything */
-    white-space: nowrap;
-    overflow: hidden;
     padding:11px;
     border-radius: 5px;
-    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, max-height 0.7s, -webkit-transform 0.7s;
-    transition:width 0.7s, margin-left 0.7s, background-color 0.7s,  max-height 0.7s;
+    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s, background-color 0.7s;
+    overflow:hidden;
+}
+
+timeline .displayOnHover {
+    max-height:0;
+    -webkit-transition:max-height 0.7s, -webkit-transform 0.7s;
+    transition:max-height 0.7s;
+    overflow:hidden;
 }
 
 timeline li:nth-child(1) activity {
@@ -86,12 +89,10 @@ timeline li:nth-child(5) activity {
 
 timeline jobTitle {
     display: block;
-}
-
-timeline date {
-    opacity: 0; /* fade in using opacity */
-    -webkit-transition:opacity 0.7s, -webkit-transform 0.7s;
-    transition:opacity 0.7s;
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 timeline li:hover::before {
@@ -106,14 +107,8 @@ timeline li:hover activity {
     will get removed when using js to transition. */
     width: 40% !important;
     margin-left:20% !important;
-    float:none;
-    height:auto;
-    max-height: 1000px;
 }
 
-timeline li:hover date {
-    opacity: 100; /* fade in using opacity */
-    display:block; /* prevents a transition-rendering, 
-    line-wrap style jump when the fully rendered date 
-    string is longer than the container when it is shrunk */
+timeline li:hover .displayOnHover {
+    max-height: 500px;
 }
