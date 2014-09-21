@@ -122,7 +122,13 @@
 </script>
 
 <script>
-  var ActivityModel = Backbone.Model.extend();
+  var ActivityModel = Backbone.Model.extend({
+    parse: function(data, options){
+      data.start = moment(data.start);
+      data.end = data.end ? moment(data.end) : moment();
+      return data;
+    }
+  });
   
   var ActivityView = Backbone.View.extend({
     tagName: "li",
@@ -138,12 +144,9 @@
   
   // run
   var activities = _.each(timelineData.activities, function(activityData){
-    activityData.timelineStart = moment(timelineData.start);
-    activityData.start = moment(activityData.start);
-    activityData.end = activityData.end ? moment(activityData.end) : moment();
-    
     var activityView = new ActivityView({
-      model: new ActivityModel(activityData)
+      model: new ActivityModel(activityData, { parse:true }),
+      timelineStart: moment(timelineData.start)
     });
     $("timeline ol").append(activityView.el);
   });
