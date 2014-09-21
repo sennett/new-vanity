@@ -112,7 +112,7 @@
 </script>
 
 <script type="text/html" id="timeline-row">
-  <activity>
+  <activity style="margin-left: <%= leftOffset %>; width: <%= width %>">
     <jobTitle><%= what %>, <%= where %></jobTitle>
     <div class="displayOnHover">
       <date><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></date>
@@ -133,12 +133,16 @@
   var ActivityView = Backbone.View.extend({
     tagName: "li",
     template: _.template($("#timeline-row").html()),
-    initialize: function(){
+    initialize: function(options){
+      this.timelineStart = options.timelineStart;
       _.bindAll(this, 'render');
       this.render();
     },
     render: function(){
-      this.$el.html(this.template(this.model.attributes));
+      var viewData = Object.create(this.model.attributes);
+      viewData.leftOffset = this.model.attributes.start.diff(this.timelineStart) / moment().diff(this.timelineStart) * 100 + '%';
+      viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
+      this.$el.html(this.template(viewData));
     }
   });
   

@@ -62,31 +62,6 @@ timeline .displayOnHover {
     overflow:hidden;
 }
 
-timeline li:nth-child(1) activity {
-    margin-left: 4.45%;
-    width:18.28%;
-}
-
-timeline li:nth-child(2) activity {
-    margin-left: 25%;
-    width:25%;
-}
-
-timeline li:nth-child(3) activity {
-    margin-left: 56.81%;
-    width:11.37%;
-}
-
-timeline li:nth-child(4) activity {
-    margin-left: 68.18%;
-    width:22.73%;
-}
-
-timeline li:nth-child(5) activity {
-    margin-left: 90.91%;
-    width:4.54%;
-}
-
 timeline jobTitle {
     display: block;
     text-overflow: ellipsis;
