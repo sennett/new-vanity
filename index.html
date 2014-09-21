@@ -148,14 +148,17 @@
     }
   });
   
-  // run
-  var activities = _.each(timelineData.activities, function(activityData){
+  var createActivity =  function(activityData){
+    var timelineStart = moment(timelineData.start);
     var activityView = new ActivityView({
       model: new ActivityModel(activityData, { parse:true }),
-      timelineStart: moment(timelineData.start)
+      timelineStart: timelineStart
     });
     $("timeline ol").append(activityView.el);
-  });
+  };
+  
+  // run
+  _.each(timelineData.activities, createActivity);
   
 </script>
 
