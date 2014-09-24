@@ -1,0 +1,87 @@
+timeline ol {
+    padding:0;
+    height: 100%;
+}
+
+timeline year {
+    color: #474747;
+    display:inline-block;
+    width:9.09%;
+    border-right:solid 1px #3C3C3C;
+    border-top:solid 1px #3C3C3C;
+    text-align:center;
+    font-size:11px;
+    line-height: 1.7em;
+}
+
+timeline year:last-child {
+    border-right:none;
+}
+
+/* centered line */
+timeline li::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    top:50%;
+    border-bottom: solid 1px #3C3C3C;
+}
+
+timeline li {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    height:18%;
+    /* because of transform: translateY(-50%); on child */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+timeline activity {
+    display:block;
+    background-color: #3C3C3C;
+    position: relative;
+    top: 50%;
+    margin-top: -1.5em;
+    padding:11px;
+    border-radius: 5px;
+    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, -webkit-transform 0.7s;
+    transition:width 0.7s, margin-left 0.7s, background-color 0.7s;
+    overflow:hidden;
+}
+
+timeline .displayOnHover {
+    max-height:0;
+    -webkit-transition:max-height 0.7s, -webkit-transform 0.7s;
+    transition:max-height 0.7s;
+    overflow:hidden;
+}
+
+timeline jobTitle {
+    display: block;
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+timeline li:hover::before {
+    border-color: #595959;
+    -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
+    transition: border-color 0.7s;
+}
+
+timeline li:hover activity {
+    background-color: #595959;
+    /* important required to overwrite Nth child selector.
+    will get removed when using js to transition. */
+    width: 40% !important;
+    margin-left:20% !important;
+}
+
+timeline li:hover .displayOnHover {
+    max-height: 500px;
+}

@@ -4,6 +4,7 @@ var moment = require("moment");
 var $ = require("jquery");
 
 var timelineData = require('./data.js');
+require("./styles.css");
 
 var ActivityModel = require('./activity/model.js');
 var ActivityView = require('./activity/view.js');
