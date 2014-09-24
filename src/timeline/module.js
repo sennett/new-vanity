@@ -2,9 +2,11 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 var moment = require("moment");
 var $ = require("jquery");
-Backbone.$ = $;
 
 var timelineData = require('./data.js');
+
+var ActivityModel = require('./activity/model.js');
+var ActivityView = require('./activity/view.js');
 
 var YearModel = Backbone.Model.extend();
 
@@ -19,31 +21,6 @@ var YearView = Backbone.View.extend({
     }
 });
 
-var ActivityModel = Backbone.Model.extend({
-    parse: function(data, options){
-      data.start = moment(data.start);
-      data.end = data.end ? moment(data.end) : moment();
-      return data;
-    }
-});
-
-var ActivityView = Backbone.View.extend({
-    tagName: "li",
-    template: _.template($("#timeline-row").html()),
-    
-    initialize: function(options){
-      this.timelineStart = options.timelineStart;
-      _.bindAll(this, 'render');
-      this.render();
-    },
-    
-    render: function(){
-      var viewData = Object.create(this.model.attributes);
-      viewData.leftOffset = this.model.attributes.start.diff(this.timelineStart) / moment().diff(this.timelineStart) * 100 + '%';
-      viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
-      this.$el.html(this.template(viewData));
-    }
-});
 
 var createActivity =  function(activityData){
     var timelineStart = moment(timelineData.start);
