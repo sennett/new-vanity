@@ -8,19 +8,8 @@ var timelineData = require('./data.js');
 var ActivityModel = require('./activity/model.js');
 var ActivityView = require('./activity/view.js');
 
-var YearModel = Backbone.Model.extend();
-
-var YearView = Backbone.View.extend({
-    template: _.template($("#timeline-dateline-year").html()),
-    initialize: function(){
-      _.bindAll(this, 'render');
-      this.render();
-    },
-    render: function(){
-      this.setElement(this.template(this.model.attributes));
-    }
-});
-
+var YearModel = require('./year/model.js');
+var YearView = require("./year/view.js");
 
 var createActivity =  function(activityData){
     var timelineStart = moment(timelineData.start);
