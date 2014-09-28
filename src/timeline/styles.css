@@ -66,6 +66,8 @@ timeline jobTitle {
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
+    -webkit-transition:font-size 0.7s, -webkit-transform 0.7s;
+    transition: font-size 0.7s;
 }
 
 timeline li:hover::before {
@@ -80,6 +82,10 @@ timeline li:hover activity {
     will get removed when using js to transition. */
     width: 40% !important;
     margin-left:20% !important;
+}
+
+timeline li:hover jobTitle {
+    font-size: 18px;
 }
 
 timeline li:hover .displayOnHover {
