@@ -3,5 +3,10 @@
     <div class="displayOnHover">
         <date><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></date>
         <spiel><%= speil %></spiel>
+        <ul class="images">
+            <% for(var i = 0; i < images.length; i++ ){ %>
+                <li><img src="<%= images[i] %>" /></li>
+            <% } %>
+        </ul>
     </div>
 </activity>

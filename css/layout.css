@@ -7,6 +7,8 @@ html,body{height:100%;}
 
 .wrap > div {
     height:45%;
+    position: relative;
+    z-index: 1;
 }
 
 .wrap > div > div {
@@ -26,3 +28,9 @@ timeline {
 blurb, contact {
     height: 100%;
 }
+
+timeline {
+	position: relative;
+	z-index: 2;
+}
+
