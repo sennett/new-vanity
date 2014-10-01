@@ -11,10 +11,18 @@ module.exports = function(grunt) {
               transform: ['node-underscorify', 'grunt-less-browserify']
             }
           }
+        },
+        watch: {
+          scripts: {
+            files: 'src/**/*',
+            tasks: 'default'
+          }
         }
     });
     
     grunt.loadNpmTasks('grunt-browserify');
+    
+    grunt.loadNpmTasks('grunt-contrib-watch');
     
     grunt.registerTask('default', ['browserify']);
 };
