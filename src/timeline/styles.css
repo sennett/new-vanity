@@ -51,6 +51,7 @@ timeline activity {
     -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, -webkit-transform 0.7s;
     transition:width 0.7s, margin-left 0.7s, background-color 0.7s;
     overflow:hidden;
+    z-index: 1;
 }
 
 timeline .displayOnHover {
@@ -82,6 +83,7 @@ timeline li:hover activity {
     will get removed when using js to transition. */
     width: 40% !important;
     margin-left:20% !important;
+    /*z-index: 10;*/
 }
 
 timeline li:hover jobTitle {
