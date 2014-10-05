@@ -48,6 +48,9 @@ timeline activity {
     transition:width 0.7s, margin-left 0.7s, background-color 0.7s;
     overflow:hidden;
     z-index: 1;
+    /* TODO: remove */
+    /*width: 40% !important;*/
+    /*margin-left:20% !important;*/
 }
 
 timeline .displayOnHover {
@@ -55,6 +58,8 @@ timeline .displayOnHover {
     -webkit-transition:max-height 0.7s, -webkit-transform 0.7s;
     transition:max-height 0.7s;
     overflow:hidden;
+    /* TODO: remove */
+    /*max-height: 500px;*/
 }
 
 timeline jobTitle {
@@ -87,5 +92,5 @@ timeline .activityRow:hover jobTitle {
 }
 
 timeline .activityRow:hover .displayOnHover {
-    max-height: 500px;
+    max-height: 350px;
 }

@@ -8,3 +8,9 @@ activity .images li {
     float:left;
     padding:2px;
 }
+
+activity spiel {
+    max-height: 200px;
+    overflow-y: scroll;
+    display:block;
+}
