@@ -44,7 +44,7 @@ module.exports = {
         challenges that arise from distributed computing concerns; regular\
         meetings with business stakeholders to align goals and provide\
         support and technical perspective; maintaining the relationship\
-        between Enlighten and the company to foster future collaboration.\ </p>.",
+        between Enlighten and the company to foster future collaboration.</p>",
         images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
       }, { 
         what: "JavaScript Arquitect", 
