@@ -1,12 +1,7 @@
-activity .images {
-    margin:0;
-    padding:0;
-    list-style-type:0;
-}
-
-activity .images li {
+activity .images img {
+    width:33%;
     float:left;
-    padding:2px;
+    padding-left:2px;
 }
 
 activity spiel {
