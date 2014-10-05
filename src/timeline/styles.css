@@ -18,6 +18,13 @@ timeline year:last-child {
     border-right:none;
 }
 
+timeline .activityRow {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    height:18%;
+}
+
 /* centered line */
 timeline .activityRow::before {
     content: "";
@@ -29,68 +36,9 @@ timeline .activityRow::before {
     border-bottom: solid 1px #3C3C3C;
 }
 
-timeline .activityRow {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    height:18%;
-}
-
-timeline activity {
-    display:block;
-    background-color: #3C3C3C;
-    position: relative;
-    top: 50%;
-    margin-top: -1.5em;
-    padding:11px;
-    border-radius: 5px;
-    -webkit-transition:width 0.7s, margin-left 0.7s, background-color 0.7s, -webkit-transform 0.7s;
-    transition:width 0.7s, margin-left 0.7s, background-color 0.7s;
-    overflow:hidden;
-    z-index: 1;
-    /* TODO: remove */
-    /*width: 40% !important;*/
-    /*margin-left:20% !important;*/
-}
-
-timeline .displayOnHover {
-    max-height:0;
-    -webkit-transition:max-height 0.7s, -webkit-transform 0.7s;
-    transition:max-height 0.7s;
-    overflow:hidden;
-    /* TODO: remove */
-    /*max-height: 500px;*/
-}
-
-timeline jobTitle {
-    display: block;
-    text-overflow: ellipsis;
-    /* Required for text-overflow to do anything */
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-transition:font-size 0.7s, -webkit-transform 0.7s;
-    transition: font-size 0.7s;
-}
-
 timeline .activityRow:hover::before {
     border-color: #595959;
     -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
     transition: border-color 0.7s;
 }
 
-timeline .activityRow:hover activity {
-    background-color: #595959;
-    /* important required to overwrite Nth child selector.
-    will get removed when using js to transition. */
-    width: 40% !important;
-    margin-left:20% !important;
-    z-index: 2;
-}
-
-timeline .activityRow:hover jobTitle {
-    font-size: 18px;
-}
-
-timeline .activityRow:hover .displayOnHover {
-    max-height: 350px;
-}
