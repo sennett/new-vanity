@@ -58,3 +58,9 @@ timeline .activityRow:hover jobTitle {
 timeline .activityRow:hover .displayOnHover {
     max-height: 340px;
 }
+
+activity .date {
+    font-weight:bold;
+    display: block;
+    margin:5px 0px;
+}

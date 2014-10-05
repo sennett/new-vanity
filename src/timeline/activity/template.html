@@ -1,7 +1,7 @@
 <activity style="margin-left: <%= leftOffset %>; width: <%= width %>">
     <jobTitle><%= what %>, <%= where %></jobTitle>
     <div class="displayOnHover">
-        <date><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></date>
+        <div class="date"><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></div>
         <spiel><%= speil %></spiel>
         <div class="images">
             <% for(var i = 0; i < images.length; i++ ){ %>
