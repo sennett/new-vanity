@@ -3,6 +3,7 @@ var _ = require('underscore');
 var moment = require("moment");
 
 var template = require("./template.html");
+require('./styles.css');
 
 module.exports = Backbone.View.extend({
     tagName: "li",
