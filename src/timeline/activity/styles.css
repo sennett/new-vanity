@@ -2,6 +2,7 @@ activity .images img {
     width:33%;
     float:left;
     padding-left:2px;
+    margin-top:10px;
 }
 
 activity spiel {
@@ -55,5 +56,5 @@ timeline .activityRow:hover jobTitle {
 }
 
 timeline .activityRow:hover .displayOnHover {
-    max-height: 350px;
+    max-height: 340px;
 }
