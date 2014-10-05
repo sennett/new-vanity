@@ -7,6 +7,10 @@ var template = require("./template.html");
 module.exports = Backbone.View.extend({
     tagName: "li",
     
+    attributes: {
+      class: 'activityRow'
+    },
+    
     initialize: function(options){
       this.timelineStart = options.timelineStart;
       _.bindAll(this, 'render');
