@@ -5,7 +5,7 @@ activity .images img {
     margin-top:10px;
 }
 
-activity spiel {
+activity .spiel {
     max-height: 200px;
     overflow-y: scroll;
     display:block;
@@ -47,6 +47,7 @@ timeline .activityRow:hover activity {
     /* important required to overwrite Nth child selector.
     will get removed when using js to transition. */
     width: 40% !important;
+    max-width:410px;
     margin-left:20% !important;
     z-index: 2;
 }

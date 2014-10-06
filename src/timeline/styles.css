@@ -41,5 +41,3 @@ timeline .activityRow:hover::before {
     -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
     transition: border-color 0.7s;
 }
-
-

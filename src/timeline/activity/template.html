@@ -2,7 +2,7 @@
     <jobTitle><%= what %>, <%= where %></jobTitle>
     <div class="displayOnHover">
         <div class="date"><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></div>
-        <spiel><%= speil %></spiel>
+        <div class="spiel"><%= speil %></div>
         <div class="images">
             <% for(var i = 0; i < images.length; i++ ){ %>
                 <img src="<%= images[i] %>" />
