@@ -51,7 +51,7 @@ module.exports = {
         where: "Typeform", 
         start: "2014-01-01", 
         end: null, 
-        speil: null,
+        speil: 'After development of a viable prototype product, we are refactoring our codebase to provide better separation of client and server concerns. Ostensibly I am a JavaScript Architect, but in addition my role covers web API design, integration of continuous release, and recommendations regarding agile practices.',
         images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
       }]
 };
