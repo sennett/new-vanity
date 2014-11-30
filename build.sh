@@ -1,1 +1,1 @@
-watchify src/app.js -o build/app-watchify.js -t node-lessify --extension=.css -t node-underscorify --extension=.html -v
+./node_modules/watchify/bin/cmd.js src/app.js -o build/app-watchify.js -t node-lessify --extension=.css -t node-underscorify --extension=.html -v
