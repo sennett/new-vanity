@@ -29,6 +29,8 @@
     "node-lessify": "^0.0.6",
     "node-underscorify": "0.0.12",
     "underscore": "^1.7.0",
-    "watchify": "^1.0.6"
+    "watchify": "^1.0.6",
+    "connect": "^3.3.3",
+    "serve-static": "^1.7.1"
   }
 }
