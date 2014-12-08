@@ -23,13 +23,14 @@ module.exports = function(grunt) {
           scripts: {
             src: './src/app.js',
             dest: 'build/app.js'
-          }
-			//options:{
-			//	callback:function(browserify){
-			//		browserify.transform('node-lessify');
-			//		return browserify;
-			//	}
-			//}
+          },
+			options:{
+				callback:function(browserify){
+					browserify.transform('node-lessify');
+					browserify.transform('node-underscorify');
+					return browserify;
+				}
+			}
         },
 		debug: {
 			options: {
