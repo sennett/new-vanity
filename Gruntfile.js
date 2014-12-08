@@ -21,10 +21,21 @@ module.exports = function(grunt) {
         
         watchify: {
           scripts: {
-            files: './src/**/*',
+            src: './src/**/*',
             dest: 'build/app.js'
           }
-        }
+			//options:{
+			//	callback:function(browserify){
+			//		browserify.transform('node-lessify');
+			//		return browserify;
+			//	}
+			//}
+        },
+		debug: {
+			options: {
+				open: false // do not open node-inspector in Chrome automatically
+			}
+		}
     });
     
     
@@ -34,4 +45,6 @@ module.exports = function(grunt) {
     
     grunt.loadNpmTasks('grunt-watchify');
     grunt.registerTask('default', ['watchify']);
+
+	grunt.loadNpmTasks('grunt-debug-task');
 };
