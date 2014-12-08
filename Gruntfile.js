@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         
         watchify: {
           scripts: {
-            src: './src/**/*',
+            src: './src/app.js',
             dest: 'build/app.js'
           }
 			//options:{
