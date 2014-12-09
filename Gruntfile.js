@@ -1,16 +1,16 @@
-module.exports = function(grunt) {
-    
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+module.exports = function (grunt) {
+
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
 			timeline: {
 				src: './src/app.js',
 				dest: 'build/app.js'
 			},
-			options:{
-				watch:true,
+			options: {
+				watch: true,
 				keepAlive: true,
-				transform:['node-lessify', 'node-underscorify']
+				transform: ['node-lessify', 'node-underscorify']
 			}
 		},
 		debug: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 				open: false // do not open node-inspector in Chrome automatically
 			}
 		}
-    });
+	});
 
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.registerTask('default', ['browserify']);

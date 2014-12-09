@@ -1,43 +1,43 @@
 timeline ol {
-    padding:0;
-    height: 100%;
+	padding: 0;
+	height: 100%;
 }
 
 timeline year {
-    color: #474747;
-    display:inline-block;
-    width:9.09%;
-    border-right:solid 1px #3C3C3C;
-    border-top:solid 1px #3C3C3C;
-    text-align:center;
-    font-size:11px;
-    line-height: 1.7em;
+	color: #474747;
+	display: inline-block;
+	width: 9.09%;
+	border-right: solid 1px #3C3C3C;
+	border-top: solid 1px #3C3C3C;
+	text-align: center;
+	font-size: 11px;
+	line-height: 1.7em;
 }
 
 timeline year:last-child {
-    border-right:none;
+	border-right: none;
 }
 
 timeline .activityRow {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    height:18%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 18%;
 }
 
 /* centered line */
 timeline .activityRow::before {
-    content: "";
-    display: block;
-    position: relative;
-    left: 0;
-    right: 0;
-    top:50%;
-    border-bottom: solid 1px #3C3C3C;
+	content: "";
+	display: block;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 50%;
+	border-bottom: solid 1px #3C3C3C;
 }
 
 timeline .activityRow:hover::before {
-    border-color: #595959;
-    -webkit-transition:border-color 0.7s, -webkit-transform 0.7s;
-    transition: border-color 0.7s;
+	border-color: #595959;
+	-webkit-transition: border-color 0.7s, -webkit-transform 0.7s;
+	transition: border-color 0.7s;
 }
