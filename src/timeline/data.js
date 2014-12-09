@@ -8,7 +8,7 @@ module.exports = {
 		speil: null,
 		images: [{
 			src: 'http://pcwww.liv.ac.uk/~pgro/PosterPrep/black_white_logo_1849.png',
-			wdith: 'two-thirds'
+			width: 'two-thirds'
 		},{
 			src: "http://placehold.it/100x100",
 			width: 'one-third'
