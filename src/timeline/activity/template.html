@@ -5,7 +5,7 @@
         <div class="spiel"><%= speil %></div>
         <div class="images">
             <% _.forEach(images, function(image){ %>
-                <img src="<%= image %>"/>
+                <img src="<%= image.src %>" class="<%= image.width %>" />
             <% }) %>
         </div>
     </div>

@@ -6,24 +6,45 @@ module.exports = {
 		start: "2004-09-01",
 		end: "2006-07-01",
 		speil: null,
-		images: [
-			"https://liverpool-ac-uk.campuspack.eu/Users/Aimee.Blackledge/university-crest.png!100",
-			"http://placehold.it/100x100",
-			"http://placehold.it/100x100"]
+		images: [{
+			src: 'http://pcwww.liv.ac.uk/~pgro/PosterPrep/black_white_logo_1849.png',
+			wdith: 'two-thirds'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		}]
 	}, {
 		what: "BA in Music and Popular Music",
 		where: "University of Liverpool",
 		start: "2006-09-01",
 		end: "2009-07-01",
 		speil: null,
-		images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
+		images: [{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		}]
 	}, {
 		what: "Web developer",
 		where: "Dolphin Music",
 		start: "2010-05-01",
 		end: "2011-08-01",
 		speil: "Work included maintaining the customer-facing site (with close collaboration with the graphic-design team), working on backend systems, and maintaining existing integrations.  Worked with LAMP/MAMP, and HTML, CSS and JavaScript in a load-balanced environment.  Also provided technical support for the company's bespoke backend systems, including Netsuite, Exchange (later Google Apps) and the Avaya phone system.  Very much a one-man tech dept. position.",
-		images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
+		images: [{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		}]
 	}, {
 		what: "Analyst Developer",
 		where: "Enlighten Designs",
@@ -48,13 +69,31 @@ module.exports = {
         meetings with business stakeholders to align goals and provide\
         support and technical perspective; maintaining the relationship\
         between Enlighten and the company to foster future collaboration.</p>",
-		images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
+		images: [{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		}]
 	}, {
 		what: "JavaScript Arquitect",
 		where: "Typeform",
 		start: "2014-01-01",
 		end: null,
 		speil: 'After development of a viable prototype product, we are refactoring our codebase to provide better separation of client and server concerns. Ostensibly I am a JavaScript Architect, but in addition my role covers web API design, integration of continuous release, and recommendations regarding agile practices.',
-		images: ["http://placehold.it/100x100", "http://placehold.it/100x100", "http://placehold.it/100x100"]
+		images: [{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		},{
+			src: "http://placehold.it/100x100",
+			width: 'one-third'
+		}]
 	}]
 };
