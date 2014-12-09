@@ -36,13 +36,13 @@ module.exports = {
 		end: "2011-08-01",
 		speil: "Work included maintaining the customer-facing site (with close collaboration with the graphic-design team), working on backend systems, and maintaining existing integrations.  Worked with LAMP/MAMP, and HTML, CSS and JavaScript in a load-balanced environment.  Also provided technical support for the company's bespoke backend systems, including Netsuite, Exchange (later Google Apps) and the Avaya phone system.  Very much a one-man tech dept. position.",
 		images: [{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/dolphinmusic.gif",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/qtron.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/gibson.jpg",
 			width: 'one-third'
 		}]
 	}, {
