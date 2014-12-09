@@ -4,9 +4,9 @@
         <div class="date"><%= start.format("MMM 'YY") %> - <%= end.format("MMM 'YY") %></div>
         <div class="spiel"><%= speil %></div>
         <div class="images">
-            <% for(var i = 0; i < images.length; i++ ){ %>
-                <img src="<%= images[i] %>" />
-            <% } %>
+            <% _.forEach(images, function(image){ %>
+                <img src="<%= images %>" />
+            <% }) %>
         </div>
     </div>
 </activity>
