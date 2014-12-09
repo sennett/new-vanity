@@ -20,13 +20,13 @@ module.exports = {
 		end: "2009-07-01",
 		speil: null,
 		images: [{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/music dept 1.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/patch board.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/funk.jpg",
 			width: 'one-third'
 		}]
 	}, {
