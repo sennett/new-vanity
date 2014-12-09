@@ -10,7 +10,7 @@ module.exports = {
 			src: '/src/timeline/images/liverpool logo.jpg',
 			width: 'two-thirds'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/carnot engine.jpg",
 			width: 'one-third'
 		}]
 	}, {
