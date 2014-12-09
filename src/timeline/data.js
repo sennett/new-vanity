@@ -7,7 +7,7 @@ module.exports = {
 		end: "2006-07-01",
 		speil: null,
 		images: [{
-			src: 'http://pcwww.liv.ac.uk/~pgro/PosterPrep/black_white_logo_1849.png',
+			src: '/src/timeline/images/liverpool logo.jpg',
 			width: 'two-thirds'
 		},{
 			src: "http://placehold.it/100x100",

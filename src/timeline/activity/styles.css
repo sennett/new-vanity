@@ -1,15 +1,17 @@
 activity .images img {
 	float: left;
-	padding-left: 2px;
+	margin-left: 2px;
 	margin-top: 10px;
+	border: solid 1px;
+	max-height: 33%;
 }
 
 activity .images img.one-third {
-	width: 33%;
+	width: 32%;
 }
 
 activity .images img.two-thirds {
-	width: 66%;
+	width: 65%;
 }
 
 activity .spiel {
