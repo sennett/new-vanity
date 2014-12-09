@@ -70,13 +70,13 @@ module.exports = {
         support and technical perspective; maintaining the relationship\
         between Enlighten and the company to foster future collaboration.</p>",
 		images: [{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/we deliver.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/office.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/winrar.jpg",
 			width: 'one-third'
 		}]
 	}, {
@@ -86,13 +86,13 @@ module.exports = {
 		end: null,
 		speil: 'After development of a viable prototype product, we are refactoring our codebase to provide better separation of client and server concerns. Ostensibly I am a JavaScript Architect, but in addition my role covers web API design, integration of continuous release, and recommendations regarding agile practices.',
 		images: [{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/gibson.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/gibson.jpg",
 			width: 'one-third'
 		},{
-			src: "http://placehold.it/100x100",
+			src: "/src/timeline/images/gibson.jpg",
 			width: 'one-third'
 		}]
 	}]
