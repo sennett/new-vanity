@@ -44,8 +44,7 @@ timeline .displayOnHover {
 timeline jobTitle {
 	display: block;
 	text-overflow: ellipsis;
-	/* Required for text-overflow to do anything */
-	white-space: nowrap;
+	white-space: nowrap; /* Required for text-overflow to do anything */
 	overflow: hidden;
 	-webkit-transition: font-size 0.7s, -webkit-transform 0.7s;
 	transition: font-size 0.7s;
@@ -53,7 +52,7 @@ timeline jobTitle {
 
 timeline .activityRow:hover activity {
 	background-color: #595959;
-	/* important required to overwrite Nth child selector.
+	/* important required to overwrite js inline style.
 	will get removed when using js to transition. */
 	width: 40% !important;
 	max-width: 410px;
