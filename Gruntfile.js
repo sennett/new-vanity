@@ -60,8 +60,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-debug-task');
 
 	grunt.registerTask('default', ['browserify']);
-
-	//grunt.loadNpmTasks('grunt-debug-task');
+	grunt.registerTask('buildProd', ['clean', 'browserify:package', 'copy', 'concat']);
 };
