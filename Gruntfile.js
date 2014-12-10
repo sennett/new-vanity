@@ -8,9 +8,14 @@ module.exports = function (grunt) {
 				dest: 'build/app.js'
 			},
 			options: {
+				// next two lines for watchify + watch instead of browserify
 				watch: true,
 				keepAlive: true,
-				transform: ['node-lessify', 'node-underscorify']
+				transform: ['node-lessify', 'node-underscorify'],
+				debug: true,
+				browserifyOptions: {
+					debug:true // include source maps.  currently only available with browserify
+				}
 			}
 		},
 		debug: {
