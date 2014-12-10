@@ -3,16 +3,22 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			app: {
+			dev: {
 				src: './src/app.js',
 				dest: 'build/js/app.js'
+			},
+			package: {
+				src: './src/app.js',
+				dest: 'build/js/app.js',
+				options: {
+					keepAlive: false
+				}
 			},
 			options: {
 				// next two lines for watchify + watch instead of browserify
 				watch: true,
 				keepAlive: true,
 				transform: ['node-lessify', 'node-underscorify'],
-				debug: true,
 				browserifyOptions: {
 					debug:true // include source maps.  currently only available with browserify
 				}
