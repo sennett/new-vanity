@@ -7,10 +7,10 @@ module.exports = {
 		end: "2006-07-01",
 		speil: null,
 		images: [{
-			src: '/src/timeline/images/liverpool logo.jpg',
+			src: 'liverpool logo.jpg',
 			width: 'two-thirds'
 		},{
-			src: "/src/timeline/images/carnot engine.jpg",
+			src: "carnot engine.jpg",
 			width: 'one-third'
 		}]
 	}, {
@@ -20,13 +20,13 @@ module.exports = {
 		end: "2009-07-01",
 		speil: null,
 		images: [{
-			src: "/src/timeline/images/music dept 1.jpg",
+			src: "music dept 1.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/patch board.jpg",
+			src: "patch board.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/funk.jpg",
+			src: "funk.jpg",
 			width: 'one-third'
 		}]
 	}, {
@@ -36,13 +36,13 @@ module.exports = {
 		end: "2011-08-01",
 		speil: "Work included maintaining the customer-facing site (with close collaboration with the graphic-design team), working on backend systems, and maintaining existing integrations.  Worked with LAMP/MAMP, and HTML, CSS and JavaScript in a load-balanced environment.  Also provided technical support for the company's bespoke backend systems, including Netsuite, Exchange (later Google Apps) and the Avaya phone system.  Very much a one-man tech dept. position.",
 		images: [{
-			src: "/src/timeline/images/dolphinmusic.gif",
+			src: "dolphinmusic.gif",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/qtron.jpg",
+			src: "qtron.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/gibson.jpg",
+			src: "gibson.jpg",
 			width: 'one-third'
 		}]
 	}, {
@@ -70,13 +70,13 @@ module.exports = {
         support and technical perspective; maintaining the relationship\
         between Enlighten and the company to foster future collaboration.</p>",
 		images: [{
-			src: "/src/timeline/images/we deliver.jpg",
+			src: "we deliver.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/office.jpg",
+			src: "office.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/winrar.jpg",
+			src: "winrar.jpg",
 			width: 'one-third'
 		}]
 	}, {
@@ -86,13 +86,13 @@ module.exports = {
 		end: null,
 		speil: 'After development of a viable prototype product, we are refactoring our codebase to provide better separation of client and server concerns. Ostensibly I am a JavaScript Architect, but in addition my role covers web API design, integration of continuous release, and recommendations regarding agile practices.',
 		images: [{
-			src: "/src/timeline/images/Typeform-Logo.png",
+			src: "Typeform-Logo.png",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/phone.jpg",
+			src: "phone.jpg",
 			width: 'one-third'
 		},{
-			src: "/src/timeline/images/beardyman.jpg",
+			src: "beardyman.jpg",
 			width: 'one-third'
 		}]
 	}]

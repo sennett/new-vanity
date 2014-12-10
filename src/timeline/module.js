@@ -15,7 +15,10 @@ var YearView = require("./year/view.js");
 var createActivity = function (activityData) {
 	var timelineStart = moment(timelineData.start);
 	var activityView = new ActivityView({
-		model: new ActivityModel(activityData, {parse: true}),
+		model: new ActivityModel(activityData, {
+			parse: true,
+			imagePath: '/src/timeline/images/'
+		}),
 		timelineStart: timelineStart
 	});
 	$("timeline ol").append(activityView.el);
