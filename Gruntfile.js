@@ -18,6 +18,14 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		copy: {
+			baseHtml: {
+				files:[{
+					src: ['index.html'],
+					dest: 'build/'
+				}]
+			}
+		},
 		debug: {
 			options: {
 				open: false // do not open node-inspector in Chrome automatically
@@ -26,6 +34,8 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-browserify');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+
 	grunt.registerTask('default', ['browserify']);
 
 	//grunt.loadNpmTasks('grunt-debug-task');
