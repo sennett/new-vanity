@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			timeline: {
+			app: {
 				src: './src/app.js',
 				dest: 'build/js/app.js'
 			},
@@ -21,14 +21,16 @@ module.exports = function (grunt) {
 		copy: {
 			baseHtml: {
 				files:[{
-					src: ['index.html'],
-					dest: 'build/'
+					cwd: 'src/',
+					src: 'index.html',
+					dest: 'build/',
+					expand: true
 				}]
 			},
 			images: {
 				files:[{
 					cwd: 'src/timeline/images/',
-					src: '*.{jpg,gif}',
+					src: '*.{jpg,gif,png}',
 					dest: 'build/images/',
 					expand: true
 				}]

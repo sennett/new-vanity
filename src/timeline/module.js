@@ -17,7 +17,7 @@ var createActivity = function (activityData) {
 	var activityView = new ActivityView({
 		model: new ActivityModel(activityData, {
 			parse: true,
-			imagePath: '/src/timeline/images/'
+			imagePath: 'images/'
 		}),
 		timelineStart: timelineStart
 	});
