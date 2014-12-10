@@ -1,19 +1,19 @@
+var createBrowserifyBundleConf = function(options){
+	var bundles = {
+		src: './src/app.js',
+		dest: 'build/js/app.js'
+	};
+	bundles.options = options ? options : {};
+	return bundles;
+};
+
 module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			dev: {
-				src: './src/app.js',
-				dest: 'build/js/app.js'
-			},
-			package: {
-				src: './src/app.js',
-				dest: 'build/js/app.js',
-				options: {
-					keepAlive: false
-				}
-			},
+			dev: createBrowserifyBundleConf(),
+			package: createBrowserifyBundleConf({keepAlive: false}),
 			options: {
 				// next two lines for watchify + watch instead of browserify
 				watch: true,
