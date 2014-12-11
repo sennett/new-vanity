@@ -49,6 +49,19 @@ module.exports = function (grunt) {
 			}
 		},
 		clean: ['build'],
+		concurrent: {
+			dev: ['browserify:dev', 'watch']
+		},
+		watch:{
+			copyable: {
+				files: ['src/index.html', 'src/timeline/images/*.{jpg,gif,png}'],
+				tasks: ['copy']
+			},
+			concatable: {
+				files: ['css/layout.css', 'css/styles.css'],
+				tasks: ['concat']
+			}
+		},
 		debug: {
 			options: {
 				open: false // do not open node-inspector in Chrome automatically
@@ -61,7 +74,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-debug-task');
+	grunt.loadNpmTasks('grunt-concurrent');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['browserify']);
 	grunt.registerTask('buildProd', ['clean', 'browserify:package', 'copy', 'concat']);
+	grunt.registerTask('dev', ['clean', 'concurrent:dev']);
 };
