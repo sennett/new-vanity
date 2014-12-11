@@ -39,3 +39,5 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+deploy.sh
