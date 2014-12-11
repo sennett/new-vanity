@@ -67,6 +67,11 @@ module.exports = function (grunt) {
 				tasks: ['concat']
 			}
 		},
+		uglify: {
+			app: {
+				files: { 'build/js/app.js' : ['build/js/app.js'] }
+			}
+		},
 		debug: {
 			options: {
 				open: false // do not open node-inspector in Chrome automatically
@@ -81,7 +86,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-debug-task');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	grunt.registerTask('buildProd', ['clean', 'browserify:package', 'copy', 'concat']);
+	grunt.registerTask('buildProd', ['clean', 'browserify:package', 'uglify', 'copy', 'concat']);
 	grunt.registerTask('dev', ['clean', 'copy', 'concat', 'concurrent:dev']);
 };
