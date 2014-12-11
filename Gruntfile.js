@@ -50,7 +50,12 @@ module.exports = function (grunt) {
 		},
 		clean: ['build'],
 		concurrent: {
-			dev: ['browserify:dev', 'watch']
+			dev: {
+				tasks: ['browserify:dev', 'watch'],
+				options: {
+					logConcurrentOutput: true
+				}
+			}
 		},
 		watch:{
 			copyable: {
@@ -78,5 +83,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('buildProd', ['clean', 'browserify:package', 'copy', 'concat']);
-	grunt.registerTask('dev', ['clean', 'concurrent:dev']);
+	grunt.registerTask('dev', ['clean', 'copy', 'concat', 'concurrent:dev']);
 };
