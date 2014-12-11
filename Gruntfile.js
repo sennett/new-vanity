@@ -69,7 +69,11 @@ module.exports = function (grunt) {
 		},
 		uglify: {
 			app: {
-				files: { 'build/js/app.js' : ['build/js/app.js'] }
+				files: { 'build/js/app.js' : ['build/js/app.js'] },
+				options: {
+					sourceMap: true,
+					sourceMapName: 'build/js/app.js.map'
+				}
 			}
 		},
 		debug: {

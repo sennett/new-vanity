@@ -7,6 +7,7 @@ Todo:
 - source maps for uglified code in production build
 - timeline more visible
 - colours on timeline activities
+- get that nice font back
 - text resize to fit available space on blurb and contact
 - fix nasty rendering jump on images
 - delay hover effect (add class using JS delay or something - CSS :hover is too keen)
