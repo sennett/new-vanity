@@ -1,6 +1,6 @@
 Site at sennett.org.
 
-`grunt buildProd` to get a production ready deployment package.  `grunt dev` to build and set watchers on a dev environment locally.
+`grunt buildProd` to get a production-ready deployment package.  `grunt dev` to build and set watchers on a dev environment locally.
 
 Todo:
 
