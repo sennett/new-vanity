@@ -5,6 +5,7 @@ Site at sennett.org.
 Todo:
 
 - source maps for uglified code in production build
+- nasty image bug in safari
 - colours on timeline activities
 - get that nice font back
 - text resize to fit available space on blurb and contact
