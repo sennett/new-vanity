@@ -12,16 +12,17 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			dev: createBrowserifyBundleConf(),
+			dev: createBrowserifyBundleConf({
+				browserifyOptions: {
+					debug:true // include source maps.  currently only available with browserify
+				}
+			}),
 			package: createBrowserifyBundleConf({keepAlive: false}),
 			options: {
 				// next two lines for watchify + watch instead of browserify
 				watch: true,
 				keepAlive: true,
-				transform: ['node-lessify', 'node-underscorify'],
-				browserifyOptions: {
-					debug:true // include source maps.  currently only available with browserify
-				}
+				transform: ['node-lessify', 'node-underscorify']
 			}
 		},
 		copy: {
@@ -69,10 +70,12 @@ module.exports = function (grunt) {
 		},
 		uglify: {
 			app: {
-				files: { 'build/js/app.js' : ['build/js/app.js'] },
+				files: {
+					'build/js/app.js' : ['build/js/app.js']
+				},
 				options: {
 					sourceMap: true,
-					sourceMapName: 'build/js/app.js.map'
+					sourceMapIncludeSources: true
 				}
 			}
 		},
