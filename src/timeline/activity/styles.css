@@ -51,7 +51,7 @@ timeline jobTitle {
 	transition: font-size 0.7s;
 }
 
-timeline .activityRow:hover activity {
+timeline .activityRow.hover activity {
 	background-color: #595959;
 	/* important required to overwrite js inline style.
 	will get removed when using js to transition. */
@@ -61,11 +61,11 @@ timeline .activityRow:hover activity {
 	z-index: 2;
 }
 
-timeline .activityRow:hover jobTitle {
+timeline .activityRow.hover jobTitle {
 	font-size: 18px;
 }
 
-timeline .activityRow:hover .displayOnHover {
+timeline .activityRow.hover .displayOnHover {
 	max-height: 370px;
 }
 

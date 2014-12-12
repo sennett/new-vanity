@@ -11,10 +11,13 @@ module.exports = Backbone.View.extend({
 	attributes: {
 		class: 'activityRow'
 	},
-
+	events: {
+		'mouseover': 'expand',
+		'mouseout': 'contract'
+	},
 	initialize: function (options) {
 		this.timelineStart = options.timelineStart;
-		_.bindAll(this, 'render');
+		_.bindAll(this, 'render', 'expand');
 		this.render();
 	},
 
@@ -24,5 +27,14 @@ module.exports = Backbone.View.extend({
 		viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
 		viewData._ = _;
 		this.$el.html(template(viewData));
+	},
+
+	expand: function(){
+		this.$el.addClass('hover');
+	},
+
+	contract: function(){
+		this.$el.removeClass('hover');
 	}
+
 });

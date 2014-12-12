@@ -37,7 +37,7 @@ timeline .activityRow::before {
 	-webkit-transition: border-color 0.7s, -webkit-transform 0.7s;
 }
 
-timeline .activityRow:hover::before {
+timeline .activityRow.hover::before {
 	border-color: #595959;
 	-webkit-transition: border-color 0.7s, -webkit-transform 0.7s;
 	transition: border-color 0.7s;
