@@ -17,7 +17,7 @@ module.exports = Backbone.View.extend({
 	},
 	initialize: function (options) {
 		this.timelineStart = options.timelineStart;
-		_.bindAll(this, 'render', 'expand');
+		_.bindAll(this, 'render', 'expand', 'contract');
 		this.render();
 	},
 
@@ -27,17 +27,18 @@ module.exports = Backbone.View.extend({
 		viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
 		viewData._ = _;
 		this.$el.html(template(viewData));
+		this.activity = this.$el.find('activity');
+		this.blurredBackgroundColour = this.activity.css('background-color');
 	},
 
 	expand: function(){
 		this.$el.addClass('hover');
-		var activity = this.$el.find('activity');
-		this.activityBackgroundColourCache = activity.css('background-color');
-		this.$el.find('activity').css({backgroundColor: this.model.attributes.colour});
+		this.activity.css({backgroundColor: this.model.attributes.colour});
 	},
 
 	contract: function(){
 		this.$el.removeClass('hover');
+		this.activity.css({backgroundColor: this.blurredBackgroundColour});
 	}
 
 });
