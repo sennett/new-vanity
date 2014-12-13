@@ -29,16 +29,20 @@ module.exports = Backbone.View.extend({
 		this.$el.html(template(viewData));
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
+		this.line = this.activity.siblings('.line');
+		this.blurredLineColour = this.line.css('border-color');
 	},
 
 	expand: function(){
 		this.$el.addClass('hover');
 		this.activity.css({backgroundColor: this.model.attributes.colour});
+		this.line.css({borderColor: this.model.attributes.colour});
 	},
 
 	contract: function(){
 		this.$el.removeClass('hover');
 		this.activity.css({backgroundColor: this.blurredBackgroundColour});
+		this.line.css({borderColor: this.blurredLineColour});
 	}
 
 });
