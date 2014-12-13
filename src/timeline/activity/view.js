@@ -31,6 +31,9 @@ module.exports = Backbone.View.extend({
 
 	expand: function(){
 		this.$el.addClass('hover');
+		var activity = this.$el.find('activity');
+		this.activityBackgroundColourCache = activity.css('background-color');
+		this.$el.find('activity').css({backgroundColor: this.model.attributes.colour});
 	},
 
 	contract: function(){
