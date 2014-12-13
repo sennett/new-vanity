@@ -12,12 +12,12 @@ module.exports = Backbone.View.extend({
 		class: 'activityRow'
 	},
 	events: {
-		'mouseover': 'expand',
-		'mouseout': 'contract'
+		'mouseover': 'highlightActivity',
+		'mouseout': 'deHighlightActivity'
 	},
 	initialize: function (options) {
 		this.timelineStart = options.timelineStart;
-		_.bindAll(this, 'render', 'expand', 'contract');
+		_.bindAll(this, 'render', 'highlightActivity', 'deHighlightActivity', 'postRender');
 		this.render();
 	},
 
@@ -27,22 +27,25 @@ module.exports = Backbone.View.extend({
 		viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
 		viewData._ = _;
 		this.$el.html(template(viewData));
+		this.postRender();
+	},
+
+	postRender: function(){
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
 		this.line = this.activity.siblings('.line');
 		this.blurredLineColour = this.line.css('border-color');
 	},
 
-	expand: function(){
+	highlightActivity: function(){
 		this.$el.addClass('hover');
 		this.activity.css({backgroundColor: this.model.attributes.colour});
 		this.line.css({borderColor: this.model.attributes.colour});
 	},
 
-	contract: function(){
+	deHighlightActivity: function(){
 		this.$el.removeClass('hover');
 		this.activity.css({backgroundColor: this.blurredBackgroundColour});
 		this.line.css({borderColor: this.blurredLineColour});
 	}
-
 });
