@@ -4,9 +4,9 @@ Site at sennett.org.
 
 Todo:
 
+- tidy up colour var names
 - source maps for uglified code in production build
 - nasty image bug in safari
-- colours on timeline activities
 - get that nice font back
 - text resize to fit available space on blurb and contact
 - fix nasty rendering jump on images
