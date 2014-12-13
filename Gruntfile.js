@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 		},
 		concat: {
 			dist: {
-				src: ['css/layout.css', 'css/styles.css'],
+				src: ['css/bootstrap-temp.css', 'css/layout.css', 'css/styles.css'],
 				dest: 'build/css/stylesheet.css'
 			}
 		},

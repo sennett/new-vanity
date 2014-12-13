@@ -6,7 +6,7 @@ module.exports = {
 		start: "2004-09-01",
 		end: "2006-07-01",
 		speil: null,
-		colour: '#BA4952',
+		colour: '#0b3919',
 		images: [{
 			src: 'liverpool logo.jpg',
 			width: 'two-thirds'
@@ -19,7 +19,7 @@ module.exports = {
 		where: "University of Liverpool",
 		start: "2006-09-01",
 		end: "2009-07-01",
-		colour: '#BA4952',
+		colour: '#454343',
 		speil: null,
 		images: [{
 			src: "music dept 1.jpg",
@@ -36,7 +36,7 @@ module.exports = {
 		where: "Dolphin Music",
 		start: "2010-05-01",
 		end: "2011-08-01",
-		colour: '#BA4952',
+		colour: '#00aeef',
 		speil: "Work included maintaining the customer-facing site (with close collaboration with the graphic-design team), working on backend systems, and maintaining existing integrations.  Worked with LAMP/MAMP, and HTML, CSS and JavaScript in a load-balanced environment.  Also provided technical support for the company's bespoke backend systems, including Netsuite, Exchange (later Google Apps) and the Avaya phone system.  Very much a one-man tech dept. position.",
 		images: [{
 			src: "dolphinmusic.gif",
@@ -53,7 +53,7 @@ module.exports = {
 		where: "Enlighten Designs",
 		start: "2011-08-01",
 		end: "2014-01-01",
-		colour: '#BA4952',
+		colour: '#008fc5',
 		speil: "<p>\
         Began as traditional .NET development work with web, \
         database, WPF, and data integration projects. I provided\
@@ -88,7 +88,7 @@ module.exports = {
 		where: "Typeform",
 		start: "2014-01-01",
 		end: null,
-		colour: '#BA4952',
+		colour: '#83cbca',
 		speil: 'After development of a viable prototype product, we are refactoring our codebase to provide better separation of client and server concerns. Ostensibly I am a JavaScript Architect, but in addition my role covers web API design, integration of continuous release, and recommendations regarding agile practices.',
 		images: [{
 			src: "Typeform-Logo.png",
