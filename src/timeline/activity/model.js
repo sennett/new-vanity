@@ -1,6 +1,7 @@
 var Backbone = require('backbone');
 var _ = require('underscore');
 var moment = require("moment");
+var tinycolor = require('tinycolor2');
 
 module.exports = Backbone.Model.extend({
 	parse: function (data, options) {
@@ -10,6 +11,7 @@ module.exports = Backbone.Model.extend({
 			image.src = options.imagePath + image.src;
 			return image;
 		});
+		data.textColor = data.textColor || tinycolor.mostReadable(data.colour, ['#262626', '#cbcbcb', '#000', '#fff'])
 		return data;
 	}
 });

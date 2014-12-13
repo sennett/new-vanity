@@ -33,19 +33,27 @@ module.exports = Backbone.View.extend({
 	postRender: function(){
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
+		this.blurredColour = this.activity.css('color');
+		this.focussedColor = this.activity
 		this.line = this.activity.siblings('.line');
 		this.blurredLineColour = this.line.css('border-color');
 	},
 
 	highlightActivity: function(){
 		this.$el.addClass('hover');
-		this.activity.css({backgroundColor: this.model.attributes.colour});
+		this.activity.css({
+			backgroundColor: this.model.attributes.colour,
+			color: this.model.attributes.textColor
+		});
 		this.line.css({borderColor: this.model.attributes.colour});
 	},
 
 	deHighlightActivity: function(){
 		this.$el.removeClass('hover');
-		this.activity.css({backgroundColor: this.blurredBackgroundColour});
+		this.activity.css({
+			backgroundColor: this.blurredBackgroundColour,
+			color: this.blurredColour
+		});
 		this.line.css({borderColor: this.blurredLineColour});
 	}
 });
