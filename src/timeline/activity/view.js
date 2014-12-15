@@ -34,7 +34,6 @@ module.exports = Backbone.View.extend({
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
 		this.blurredColour = this.activity.css('color');
-		this.focussedColor = this.activity
 		this.line = this.activity.siblings('.line');
 		this.blurredLineColour = this.line.css('border-color');
 	},
