@@ -11,7 +11,7 @@ module.exports = Backbone.Model.extend({
 			image.src = options.imagePath + image.src;
 			return image;
 		});
-		data.textColor = data.textColor || tinycolor.mostReadable(data.colour, ['#262626', '#cbcbcb', '#000', '#fff'])
+		data.highlightsColor = data.highlightsColor || tinycolor.mostReadable(data.colour, ['#262626', '#cbcbcb', '#000', '#fff'])
 		return data;
 	}
 });

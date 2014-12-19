@@ -4,7 +4,6 @@ Site at sennett.org.
 
 Todo:
 
-- tidy up colour var names
 - source maps for uglified code in production build
 - nasty image bug in safari
 - get that nice font back

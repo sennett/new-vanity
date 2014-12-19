@@ -42,7 +42,7 @@ module.exports = Backbone.View.extend({
 		this.$el.addClass('hover');
 		this.activity.css({
 			backgroundColor: this.model.attributes.colour,
-			color: this.model.attributes.textColor
+			color: this.model.attributes.highlightsColor
 		});
 		this.line.css({borderColor: this.model.attributes.colour});
 	},
