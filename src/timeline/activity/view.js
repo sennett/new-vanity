@@ -33,7 +33,6 @@ module.exports = Backbone.View.extend({
 	postRender: function(){
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
-		console.log(this.blurredBackgroundColour);
 		this.blurredColour = this.activity.css('color');
 		this.line = this.activity.siblings('.line');
 		this.blurredLineColour = this.line.css('border-color');
