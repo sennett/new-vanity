@@ -4,7 +4,6 @@ Site at sennett.org.
 
 Todo:
 
-- fix background colour bug in firefox 
 - source maps for uglified code in production build
 - get that nice font back
 - text resize to fit available space on blurb and contact

@@ -27,12 +27,13 @@ module.exports = Backbone.View.extend({
 		viewData.width = this.model.attributes.end.diff(this.model.attributes.start) / moment().diff(this.timelineStart) * 100 + '%';
 		viewData._ = _;
 		this.$el.html(template(viewData));
-		this.postRender();
+		_.defer(this.postRender); // no calculated styles on FF unless deferred
 	},
 
 	postRender: function(){
 		this.activity = this.$el.find('activity');
 		this.blurredBackgroundColour = this.activity.css('background-color');
+		console.log(this.blurredBackgroundColour);
 		this.blurredColour = this.activity.css('color');
 		this.line = this.activity.siblings('.line');
 		this.blurredLineColour = this.line.css('border-color');
