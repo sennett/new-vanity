@@ -19,6 +19,10 @@ blurb, contact {
     border-top: solid 1px #3C3C3C;
 }
 
+contact {
+	padding-top:0;
+}
+
 blurb {
     border-right: solid 1px #3C3C3C;
 }
